@@ -1,0 +1,37 @@
+[
+    {
+      "title": "item1",
+      "price": 6,
+      "description": "This is a item1 - amazing!"
+    },
+    {
+      "title": "item2",
+      "price": 10,
+      "description": "This is a item2 - amazing!"
+    },
+    {
+      "title": "item3",
+      "price": 11,
+      "description": "This is a item3 - amazing!"
+    },
+    {
+      "title": "item4",
+      "price": 20,
+      "description": "This is a item4 - amazing!"
+    },
+    {
+      "title": "item5",
+      "price": 14,
+      "description": "This is a item5 - amazing!"
+    },
+    {
+      "title": "item6",
+      "price": 61,
+      "description": "This is a item6 - amazing!"
+    },
+    {
+      "title": "item7",
+      "price": 12,
+      "description": "This is a item7 - amazing!"
+    }
+  ]

@@ -6,7 +6,7 @@ const path = require('path');
 
 
 
-app.get('/getItems', (req, res) => {
+app.get('/items', (req, res) => {
   res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
   const itemsFilePath = path.join(__dirname, '/assets/items.json');
   fs.readFile(itemsFilePath, (fileErr: Error, result: any) => {
@@ -16,6 +16,12 @@ app.get('/getItems', (req, res) => {
     res.json(jsonData);
 });
 });
+
+app.post('/items', (req, res) => {
+  res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.status(200).json({status:"ok"})
+});
+
 
 app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);

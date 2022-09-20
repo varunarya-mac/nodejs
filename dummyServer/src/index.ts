@@ -7,13 +7,12 @@ const path = require('path');
 
 
 app.get('/getItems', (req, res) => {
-  
+  res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
   const itemsFilePath = path.join(__dirname, '/assets/items.json');
   fs.readFile(itemsFilePath, (fileErr: Error, result: any) => {
     if(fileErr) throw fileErr;
 
     var jsonData = JSON.parse(result.toString());
-    console.log(JSON.parse(result.toString()));
     res.json(jsonData);
 });
 });
